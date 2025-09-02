@@ -1,0 +1,12 @@
+mavlink:
+  source: "udp:0.0.0.0:14550"  # or "serial:/dev/ttyUSB0:57600"
+  targets:
+    - ip: "192.168.1.10"
+      port: 14551
+
+proxy:
+  listen_port: 14560  # Port to listen for incoming messages from targets
+
+api:
+  host: "0.0.0.0"
+  port: 8080
